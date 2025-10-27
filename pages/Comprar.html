@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <title>Formulario de compra</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="logo">
+            <a href="../Index.html"><img src="../img/LogoVT.png" alt="Imagen no disponible"></a>
+        </div>
+        <nav>
+            <a href="./Quienes Somos.html">¿Quienes Somos?</a>
+            <a href="./paquetes.html">Paquetes</a>
+            <a href="https://wa.me/51938540706?text=Hola,%20Bienvenido%20a%20Viajerox%20Travel" target="_blank">Contáctanos</a>
+            <a href="./Blog.html">Blog</a>
+            <a href="./formulario.html">Suscripción</a>
+        </nav>
+    </header>
+    
+    <div class="formulario-compra">
+    <h2>Formulario de Compra</h2>
+    <form action="#" method="post">
+      
+      <div class="grupo">
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+        <label for="tipo-documento">Tipo de Documento de Identidad</label>
+        <select id="tipo-doc" name="doc" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="DNI">DNI</option>
+          <option value="Carnet de Entranjeria">Carnet de Entranjeria</option>
+          <option value="Pasaporte">Pasaporte</option>
+          <option value="PTP">PTP</option>
+        </select>
+
+        <label for="numero-doc">Numero de Documento</label>
+        <input type="documento" id="num-doc" name="document" placeholder="Numero de documento" required>
+        
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 999 999 999" required>
+      </div>
+
+      <div class="grupo">
+        <label for="pago">Método de pago</label>
+        <select id="pago" name="pago" required>
+          <option value="">-- Selecciona una opción --</option>
+          <option value="tarjeta">Tarjeta de crédito / débito</option>
+          <option value="transferencia">Transferencia bancaria</option>
+          <option value="yape">Yape / Plin</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Finalizar compra">
+    </form>
+  </div>
+
+  <footer class="pie">
+
+    <section class="datos">
+      <h2>Contactos :</h2>
+      <ul>
+        <li>Dirección:</li>
+        <p>Edificio corporativo, Los Embajadores</p>
+        <p>Av. La Encalada 1615 oficina 109-B</p>
+        <p>Lima, Perú</p>
+        <li>Teléfono:</li>
+        <p>(51) 938 540 706</p>
+        <li>Horario de atención:</li>
+        <p>Lunes a viernes: 8:30 a.m. - 6:30 p.m.</p>
+        <p>Sábado: 8:30 a.m. - 4:00 p.m.</p>
+      </ul>
+    </section>
+
+    <section class="enlaces">
+      <div class="ministerio">
+        <h3>Agencia de turismo autorizada por:</h3>
+        <img src="../img/image 6.png" alt="No disponible">
+      </div>
+    </section>
+
+    <section class="redes">
+      <div class="sociales">
+        <h3>Redes Sociales</h3>
+        <img src="../img/facebook.webp" alt="No disponible">
+        <img src="../img/whatsapp.webp" alt="No disponible">
+        <img src="../img/x.webp" alt="No disponible">
+        <img src="../img/instagram.webp" alt="No disponible">
+      </div>
+      <div class="servicios">
+        <h3>Servicios adicionales</h3>
+        <img src="../img/image 7.png" alt="No disponible">
+        <img src="../img/image 8.png" alt="No disponible">
+      </div>
+    </section>
+
+  </footer>
+
+</body>
+</html>

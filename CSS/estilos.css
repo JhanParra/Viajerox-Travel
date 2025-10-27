@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Funnel Sans";
+}
+
+body {
+    background-image: url('../img/Costa\ Verde\ 1.png');
+    background-size: cover;
+}
+
+.suscripcion {
+    background-image: url('../img/Costa\ Verde\ 1.png');
+    background-size: cover;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+    padding: 10px 10px;
+    z-index: 10;
+    background-color: rgba(240, 158, 50, 0.267);
+}
+
+.logo img {
+    height: 80px;
+    width: 100px;
+    margin-left: 100px;
+    transition: transform 1s ease;
+    animation: flotar 2s infinite;
+    cursor: pointer;
+}
+
+.logo img:hover {
+    transform: translateX(30px);
+}
+
+.cabecera a {
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 10px;
+}
+
+nav a {
+    cursor: pointer;
+    transition: color 0.3s ease, font-size 0.5s ease;
+}
+
+nav a:hover {
+    color: #ff9933;
+    font-size: 30px;
+}
+
+.multimedia {
+    width: 70%;
+    margin: 40px auto;
+    padding: 10px;
+    border: 10px solid #ff9800;
+    border-radius: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.multimedia .banner {
+    width: 100%;
+    border-radius: 200px;
+    display: block;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 125px;
+}
+
+.tarjeta img {
+    height: 400px;
+    width: 500px;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.8s ease;
+}
+
+.tarjeta img:hover {
+    background-color: #ff9800;
+    transform: scale(1.1) rotate(4deg);
+    box-shadow: 0 0 10px 6px #523903
+}
+
+.tarjeta figure {
+    margin: 0;
+    position: relative;
+}
+
+.tarjeta figcaption {
+    background-color: #ff9800;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    border-radius: 20px;
+    left: 175px;
+}
+
+.info {
+    display: inline-block;
+    justify-content: center;
+    padding: 3px 25px;
+    background-color: #2ea132;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.info:hover {
+    background-color: rgb(34, 99, 34);
+    transform: scale(1.1)
+}
+
+.pregunta {
+    text-align: center;
+    color: white;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.pregunta a {
+    display: inline-block;
+    background-color: #12a17e;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 40px;
+    border: 5px solid rgb(4, 112, 28);
+    padding: 15px 30px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.pregunta a:hover {
+    animation-name: timbrar;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes timbrar {
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-3px);
+    }
+
+    40% {
+        transform: translateX(3px);
+    }
+
+    60% {
+        transform: translateX(-3px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.metodos-pago {
+    background-color: #e6f0ff;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    width: 97.8%;
+    margin-top: 25px;
+}
+
+.metodos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.metodos img {
+    height: 100px;
+    width: 150px;
+    margin: 20px;
+    background: #FFFFFF;
+    border: 10px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background: linear-gradient(13deg, #2e7d32 50%, #b3e5fc 50%);
+    color: white;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+footer img {
+    height: 32px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.enlaces img {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.servicios img {
+    height: 32px;
+    margin-right: 10px;
+}
+
+.servicios {
+    margin-top: 20px;
+}
+
+.pie img {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.pie img:hover {
+    transform: scale(1.4);
+}
+
+/* quienes somos */
+main {
+    padding-top: 120px;
+    text-align: justify;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+h2 {
+    color: orange;
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* suscripción */
+
+.suscripcion {
+    max-width: 400px;
+    margin: 60px auto;
+    background-color: rgb(248, 225, 203);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.suscripcion h2 {
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+.suscripcion input[type="text"],
+.suscripcion input[type="email"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.suscripcion input[type="submit"] {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suscripcion input[type="submit"]:hover {
+    background-color: #e68900;
+}
+
+/* Formulario */
+
+.formulario-compra {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.formulario-compra h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 25px;
+}
+
+.formulario-compra label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario-compra input,
+.formulario-compra select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.formulario-compra input[type="submit"] {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-compra input[type="submit"]:hover {
+    background-color: #e68900;
+}
+
+.grupo {
+    margin-bottom: 25px;
+}
+
+

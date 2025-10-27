@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+}
+
+#Antioquia {
+  background-image: url('../img/fonantioquia.png');
+  /* Poner imagen como fondo */
+  background-size: cover;
+  /* La imagen de fondo cubre toda la pantalla */
+  background-position: center;
+  /* Centra la imagen de fondo*/
+}
+
+#Paracas {
+  background-image: url('../img/Paracasfond.png');
+  /* Poner imagen como fondo */
+  background-size: cover;
+  /* La imagen de fondo cubre toda la pantalla */
+  background-position: center;
+  /* Centra la imagen de fondo*/
+}
+
+#Chancay {
+  background-image: url('../img/Chancayfond.png');
+  /* Poner imagen como fondo */
+  background-size: cover;
+  /* La imagen de fondo cubre toda la pantalla */
+  background-position: center;
+  /* Centra la imagen de fondo*/
+}
+
+#TyC,
+#Blog {
+  background-image: url('../img/Costa\ Verde\ 1.png');
+  /* Poner imagen como fondo */
+  background-size: cover;
+  /* La imagen de fondo cubre toda la pantalla */
+  background-position: center;
+  /* Centra la imagen de fondo*/
+}
+
+.cabecera {
+  display: flex;
+  /* Coloca los elementos en una sola línea */
+  justify-content: space-between;
+  /* Espacia el contenido: izquierda y derecha */
+  position: sticky;
+  /* Se mantiene visible al hacer scroll */
+  align-items: center;
+  /* Centrar el texto */
+  top: 0px;
+  /* Se queda pegada al borde superior */
+  padding: 10px 10px;
+  z-index: 100;
+  /* Se muestra por encima del resto */
+  font-family: "Funnel Sans", sans-serif;
+  /* Fuente*/
+  background-color: rgba(240, 158, 50, 0.267);
+
+
+}
+
+.cabecera a {
+  color: black;
+  /* Color del texto*/
+  text-decoration: none;
+  /* Quita el subrayado */
+  margin: 20px;
+  /* Espacio entre enlaces */
+  font-weight: bold;
+  /* Letras más gruesas */
+  font-size: 25px;
+  /* Tamaño de fuente */
+  transition: color 0.3s ease;
+  font-size: 0.5s ease;
+  /* Suaviza el cambio de color al pasar el mouse */
+}
+
+.cabecera a:hover {
+  color: orange;
+  /* Cambia de color al pasar el mouse */
+  font-size: 30px;
+}
+
+.logo img {
+  width: 100px;
+  /* Ancho  del logo */
+  height: 80px;
+  /* Alto  del logo */
+  margin-left: 100px;
+  /* Espacio desde el margen izquierdo */
+  transition: transform 1s ease;
+  animation: flotar 2s infinite;
+}
+
+.logo img:hover {
+  transform: translateX(30px);
+}
+
+.paquete {
+  font-size: 25px;
+  /* Tamaño de fuente */
+  display: flex;
+  /* Coloca los elementos en fila */
+  align-items: center;
+  /* Centra verticalmente los elementos */
+  justify-content: flex-end;
+  /* Alinea el contenido a la derecha */
+  gap: 30px;
+  /* Espacio entre los elementos */
+  width: fit-content;
+  /* Ajusta el borde al contenido */
+  margin-left: auto;
+  /* Empuja el bloque hacia la derecha */
+  padding: 20px;
+  /* Espacio entre los elementos y el borde */
+  border-radius: 40px;
+  /* circunferencia del borde*/
+  border: 1px solid rgba(255, 166, 0, .5);
+  /* Borde naranja translúcido */
+  box-shadow: 0 0 20px rgba(255, 166, 0, 0.2);
+  /*Sombra naranja brillante */
+}
+
+.paquete h2,
+.paquete h3 {
+  color: rgba(214, 10, 10, 0.925);
+  /*Letra color roja */
+  -webkit-text-stroke: black 0.8px;
+  /*Sombra negra en la letra */
+}
+
+button {
+  margin-right: 30px;
+  /* Espacio entre el boton y el margen derecho */
+  color: white;
+  /* color del texto*/
+  background-color: green;
+  /* fondo del boton*/
+  padding: 10px;
+  /* distancia que hay entre el texto y el borde del boton */
+  border: none;
+  /* boton sin borde */
+  border-radius: 10px;
+  /* circunferencia del borde*/
+  font-weight: bold;
+  /* texto en negrita*/
+  cursor: pointer;
+  /* animacion de dedo al pasar el mouse*/
+  transition: transform 0.3s ease;
+  /* tiempo para que se agrande el boton */
+}
+
+button:hover {
+  background-color: orange;
+  /* El boton cambia de color */
+  transform: scale(1.1);
+  /* El boton se agranda */
+}
+
+.fotos {
+  display: flex;
+  /* Coloca la imagen grande y las pequeñas lado a lado */
+  justify-content: center;
+  /* Centra todo en la página */
+  gap: 20px;
+  /* Espacio entre la imagen grande y las pequeñas */
+  flex-wrap: wrap;
+  /* Permite adaptarse si la pantalla es pequeña */
+  margin: 50px;
+  /* Distancia con paquete */
+
+}
+
+.imgprin img {
+  width: 600px;
+  /* Ancho de la imagen */
+  height: 400px;
+  /* Alto de la imagen */
+  border-radius: 40px;
+  /* Bordes redondeados */
+  border: solid orange;
+  /* Borde de color naranja */
+  object-fit: cover;
+  /* Ajusta la imagen sin deformarla */
+
+}
+
+.imgsec {
+  display: grid;
+  /* Activa el modo cuadrícula */
+  grid-template-columns: repeat(2, 1fr);
+  /* Crea 2 columnas del mismo tamaño (1fr = una fracción del espacio disponible) */
+  gap: 15px;
+  /* Espacio entre las imágenes */
+}
+
+.imgsec img {
+  width: 300px;
+  /* Ancho de las imágenes */
+  height: 190px;
+  /* Alto de las imágenes  */
+  border-radius: 15px;
+  /* Bordes redondeados */
+  border: 2px solid orange;
+  /* Borde naranja */
+  transition: transform 0.3s ease;
+  /* Efecto suave al pasar el mouse */
+  object-fit: cover;
+  /* Evita deformaciones */
+}
+
+.imgsec img:hover {
+  transform: scale(1.1);
+  /* Aumenta el tamaño al 110% al pasar el mouse */
+}
+
+.servicio {
+  display: flex;
+  /* Usa flexbox para colocar dos columnas una al lado de la otra */
+  justify-content: space-between;
+  /* Deja espacio entre las dos columnas */
+  gap: 20px;
+  /* Espacio entre las columnas */
+  flex-wrap: wrap;
+  /* Permite que las columnas se acomoden una debajo de otra en pantallas pequeñas */
+  max-width: 1200px;
+  /* Ancho máximo del contenedor */
+  margin: 60px auto;
+  /* Centra el bloque y deja 60px arriba y abajo */
+  padding: 40px;
+  /* Espacio interno (relleno) dentro del contenedor */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Fondo gris claro */
+  border-radius: 20px;
+  /* Esquinas redondeadas */
+}
+
+.colizq h3,
+.colder h3 {
+  font-size: 30px;
+  /* Tamaño de letra */
+  color: rgba(214, 10, 10, 0.925);
+  /* Color rojo para destacar */
+}
+
+.lista1,
+.lista2,
+.lista3 {
+  font-size: 22px;
+  /* Tamaño de letra */
+  line-height: 1.8;
+  /* Espaciado entre líneas */
+  color: rgb(7, 121, 7);
+  /* color del texto*/
+  font-weight: bold;
+  /* Negrita */
+  margin: 10px;
+  /* Espacio debajo del título */
+}
+
+.colizq {
+  flex: 1;
+  min-width: 55%;
+
+}
+
+.colder {
+  display: flex;
+  /* También usa flexbox internamente */
+  flex: 1;
+  min-width: 35%;
+  flex-direction: column;
+  /* Los bloques dentro se apilan verticalmente */
+}
+
+.btnser {
+  display: flex;
+  /* Usa flexbox para organizar los botones */
+  flex-direction: column;
+  /* Coloca los botones uno debajo del otro */
+  align-items: center;
+  /* Centra los botones horizontalmente */
+  gap: 30px;
+  /* Espacio entre los botones */
+  margin-top: 50px;
+  /* Espacio superior respecto al bloque anterior */
+}
+
+.btnser button {
+  background-color: #00765f;
+  /* Fondo verde oscuro */
+  color: white;
+  /* Texto blanco */
+  font-size: 16px;
+  /* Tamaño de fuente mediano */
+  padding: 12px;
+  /* Altura del botón (arriba y abajo) */
+  border-radius: 10px;
+  /* Esquinas redondeadas */
+  cursor: pointer;
+  /* Cambia el cursor al pasar encima */
+  width: 250px;
+  /* Mismo ancho fijo para todos los botones */
+  text-align: center;
+  /* Centra el texto dentro del botón */
+  transition: transform 0.2s ease;
+  /* Efecto suave al pasar el mouse */
+}
+
+.btnser button:hover {
+  background-color: orange;
+  transform: scale(1.1);
+  /* Aumenta ligeramente el tamaño */
+}
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background: linear-gradient(13deg, #2e7d32 50%, #b3e5fc 50%);
+    color: white;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+footer img {
+    height: 32px;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.enlaces img {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.servicios img {
+    height: 32px;
+    margin-right: 10px;
+}
+
+.servicios {
+    margin-top: 20px;
+}
+
+.pie img {
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.pie img:hover {
+    transform: scale(1.4);
+}
+
+.tyc {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  line-height: 2;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tyc h1 {
+  color: rgba(214, 10, 10, 0.925);
+  text-align: center;
+  font-size: 30px;
+}
+
+.tyc h2 {
+  color: rgba(214, 10, 10, 0.925);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tyc h2 img {
+  width: 50px;
+  height: 50px;
+}
+
+.tyc li {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.Blog {
+  margin: 40px;
+  display: flex;
+  gap: 80px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 10px;
+}
+
+.Blog h2 {
+  text-align: center;
+  font-size: 40px;
+  color: orange;
+
+}
+
+.imgblog {
+  flex: 1;
+  min-width: 250px;
+}
+
+.imgblog img {
+  margin-top: 30px;
+  margin-left: 50px;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  box-shadow: .3s ease;
+}
+
+.imgblog img:hover {
+  transform: scale(1.3);
+  box-shadow: 0 8px 20px rgb(230, 140, 5);
+
+}
+
+.textoblog {
+  flex: 1.5;
+  min-width: 250px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+  font-weight: bold;
+  text-align: justify;
+  padding-left: 40px;
+  transition: transform 0.3s ease;
+  box-shadow: .3s ease;
+}
+
+.textoblog:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgb(230, 140, 5);
+}
+
+.texto2blog {
+  flex: 1;
+  min-width: 200px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: white;
+  text-align: justify;
+  transition: transform 0.3s ease;
+  box-shadow: .3s ease;
+}
+
+.texto2blog:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgb(230, 140, 5);
+}
+
