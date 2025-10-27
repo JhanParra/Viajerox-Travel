@@ -92,6 +92,7 @@
   /* Espacio desde el margen izquierdo */
   transition: transform 1s ease;
   animation: flotar 2s infinite;
+  cursor: pointer;
 }
 
 .logo img:hover {
