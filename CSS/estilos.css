@@ -16,6 +16,11 @@ body {
     background-size: cover;
 }
 
+.calendario {
+    background-image: url('../img/Costa\ Verde\ 1.png');
+    background-size: cover;
+}
+
 .cabecera {
     display: flex;
     justify-content: space-between;
@@ -381,7 +386,7 @@ img {
 
 .calendario {
     max-width: 600px;
-    margin: 20px auto;
+    margin: 30px auto;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
@@ -414,6 +419,7 @@ img {
     padding: 15px;
     border: 1px solid #eee;
     min-height: 60px;
+    font-weight: bold;
 }
 
 .dias div:hover {
