@@ -377,4 +377,52 @@ img {
     margin-bottom: 25px;
 }
 
+/*Calendario*/
+
+.calendario {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.calendario header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.dias-semana, .dias {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.dias-semana div {
+    background-color: #c8e6c9;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #a5d6a7;
+}
+
+.dias div {
+    padding: 15px;
+    border: 1px solid #eee;
+    min-height: 60px;
+}
+
+.dias div:hover {
+    background-color: #f1f8e9;
+    cursor: pointer;
+}
+
+.hoy {
+    background-color: #ffcc80;
+    border-radius: 8px;
+}
 
